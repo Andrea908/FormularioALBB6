@@ -1,0 +1,65 @@
+html {
+	max-height: 15cm;
+	min-height: 5cm;
+}
+body {
+    width: 54%; margin: auto; 
+    min-width: 997px; max-width: 930px; max-height: 150px; min-height: 2695px;
+    font-family: "Trebuchet MS", Trebuchet, Arial, Helvetica;
+	font-size: 25pt;
+	background-color: #E4DFD9;
+	padding: 8px;
+	border: 6px solid #28004D;
+}
+h1 {
+	font-size: 55px;
+	/*color: #600030;*/
+	margin-right: 0,5cm;
+	margin-left: 0,5cm;
+	margin-top: 0cm;
+	padding: 2cm;
+	border: 0cm;
+	background: -webkit-linear-gradient(100deg, #FF0080, #4B0091);
+}
+h4 {
+	background-color: #28004D;
+	color: #DCB5FF;
+	margin-right: 1cm;
+	margin-left: 1cm;
+	border-radius: 1em;
+	position: relative;
+	bottom: 9cm;
+}
+img {
+	width:330px; 
+	height:330px;
+	margin-left: 3.7cm;
+	position: relative;
+	left: 12cm;
+	top: 4cm;
+	border-radius: 50em;
+}
+table {
+	position: relative;
+	bottom: 9cm;
+	left: 1cm;
+	background: #BE77FF;
+	width: 10cm;
+	height: 0,5cm;
+	padding: 0,5px;
+	/*border: 5px solid #28004D;
+    /*border-radius: 1em;*/
+}
+input::-webkit-input-placeholder {
+	color: gray;
+	font-style: italic;
+	font-size: 13pt;
+	border-radius: grey;
+}
+label {
+	font-size: 23px;
+}
+
+
+
+
