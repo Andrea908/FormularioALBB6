@@ -1,0 +1,43 @@
+body {
+	width: 54%; margin: auto; 
+    min-width: 997px; max-width: 930px; max-height: 150px; min-height: 2695px;
+    font-family: "Trebuchet MS", Trebuchet, Arial, Helvetica;
+	font-size: 25pt;
+}
+form {
+	padding: ;
+	background-color: #ededed;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	text-align: center;
+	padding: 12px; 
+	color: #444;
+}
+table {
+	position: relative;
+	bottom: 0cm;
+	background: #BE77FF;
+	width: 10cm;
+	height: 0,5cm;
+	padding: 0,5px;
+}
+/*input {
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px;
+}*/
+input::-webkit-input-placeholder {
+	color: gray;
+	font-style: italic;
+	font-size: 13pt;
+	border-radius: grey;
+}
+label {
+	font-size: 23px;
+}
+td {
+	font-size: 25px;
+}
