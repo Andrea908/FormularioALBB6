@@ -3,37 +3,24 @@
 <meta charset="utf-8">
 <head>
 	<title>Formulario</title>
-	<link rel="stylesheet" type="text/css" href="Andrea_B.css">
 </head>
 <body>
-	 <form action="recibir_formulario.php" method="post" name="Formulario">
-	 	<h1 align="left"><font color="black">Formulario</font></h1>
-	 	<table align="center" title="Formulario">
-	 		<tr>
-                <td align="center">
-                    <label for="Name"><font color="#28004D">Names</font> <br />
-		    	    <input type="text" id="Names" name="User_Name" placeholder="Example: Julián" style="width: 300px; height: 20px"></label>
-		    </tr>
-		    <tr>
-                <td align="center">
-                    <label for="Name"><font color="#28004D">Surnames</font> <br />
-		    	    <input type="text" id="Surnames" name="User_Name" placeholder="Example: López Rodríguez" style="width: 300px; height: 20px"></label>
-		    </td>
-	 		<tr>
-	 		 	<td align="center">
-	 		 	    <label for="C.I"><font color="#28004D">C.I</font> <br />
-		    	    <input type="text" id="number" maxlength="10" name="Cedula_Identidad" placeholder="00.000.000" style="width: 200px; height: 20px">
-                    
-		    	    <select name="nationaly" id="nationality" title="select your nationality" style="width: 35px; height: 30px">
+	 <form action="recibir_formulario.php" method="post" name="formulario">
 
-                    <option value="V" title="venezolan@">V</option>
-                    <option value="E" title="extranjer@">E</option>
-                    <option value="J" title="juridico">J</option>
-                    <option value="G" title="gubernamental">G</option></select></label>
-                </td>
+	 	<table>
+	 		<tr>
+	 			<td colspan="2">Formulario</td>
+	 		</tr>
+	 		<tr>
+                <td>Nombres: </td><td><input type="text" name="nombres" id="nombres" placeholder="Ej: Martin José" title="Ingrese sus nombres"></td>
+            </tr>
+		    <tr>
+                <td>Apellidos: </td><td><input type="text" name="apellidos" id="apellidos" placeholder="Ej: Perez Salcedo" title="Ingrese sus apellidos"></td>
+	 		<tr>
+	 		 	<td>Cédula: </td><td><input type="number" name="cedula" id="cedula" placeholder="Ej: 12345678" title="Ingrese su cédula"></td>
             </tr>
 	 		<tr>
-	 			<td align="center"><input type="button" name="Send" value="Send"></td>
+	 			<td><input type="submit" name="enviar" value="Enviar"></td>
 	 		</tr>
 	 	</table>
 	 </form>

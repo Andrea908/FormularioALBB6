@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Formulario sobre animales</title>
+	<link rel="stylesheet" type="text/css" href="Animales_HojaEstilo.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<header><h1>Animales</h1></header>
+
+    <ul>
+        <li><a href="../index.php">Inicio</a></li>
+        <li><a href="Formulario_Animales.html">Formulario</a></li>
+        <li><a href="./Animales/AnimalesControlador.php?operacion=index">Animales</a></li>
+    </ul>
+
+	<form action="recibir_formulario.php" method="post" name="Formulario">
+
+        <table id="Main-container">
+            <thead>
+                <tr>
+                    <th>Especie</th><th>Nombre</th><th>Cant_Ojos</th><th>Cant_Patas</th>
+                </tr></thead>
+                
+                    <td>
+                        <input class="especie" type="text" id="especie" name="especie" placeholder="Ej: Mamífero" title="Ingrese la especie">
+                    </td>
+                    <td>
+                        <input class="nombre" type="text" id="nombre" name="nombre" placeholder="Ej: Zorro" title="Ingrese el nombre">
+                    </td>
+                    <td>
+                        <input class="ojos" type="number" id="cant_ojos" name="cant_ojos" placeholder="Ej: 2" title="Ingrese la cantidad de ojos">
+                    </td>
+                    <td>
+                        <input class="patas" type="number" id="cant_patas" name="cant_patas" placeholder="Ej: 4" title="Ingrese la cantidad de patas">
+                    </td>
+                <input class="enviar" type="submit" name="enviar" value="Enviar">
+            </table>
+        </form>
+    </body>
+</html>

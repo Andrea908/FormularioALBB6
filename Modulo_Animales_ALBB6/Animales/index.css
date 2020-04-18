@@ -1,0 +1,47 @@
+#Main-container {
+	margin: 100px auto;
+	width: 600px;
+}
+table {
+	background-color: ghostwhite;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+	position: relative; left: 3cm; bottom: 2.6cm;
+}
+th, td {
+	padding: 5px;
+}
+thead {
+	background-color: orange;
+	color: white;
+}
+tr:nth-child(even) {
+	background-color: #DDD;
+}
+input.mod {
+	width: 63px; height: 15px; 
+	font-size: 13px; 
+	position: relative; 
+	background: #00CACA;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+input.eli {
+	width: 63px; height: 15px; 
+	font-size: 13px; 
+	position: relative; 
+	background: red;
+	color: white;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+input.mod:hover {
+	background: #00FFFF;
+}
+input.eli:hover {
+	background: #FF7575;
+}
