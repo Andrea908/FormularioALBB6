@@ -4,7 +4,7 @@
 
     $db=new clasedb();
     $con=$db->conectar(); //solventar el problema de variables en la base de datos o en el codigo
-    $sql="INSERT INTO registro_de_animales VALUES(NULL,'".$especie."','".$nombre."','".$cant_ojos."', '".$cant_patas."')";
+    $sql="INSERT INTO Animales VALUES(NULL,'".$especie."','".$nombre."','".$cant_ojos."', '".$cant_patas."')";
     $resultado=mysqli_query($con, $sql);
 ?>
 <!DOCTYPE html>

@@ -33,10 +33,10 @@ $data=unserialize($data);
                         <input class="nombre" type="text" id="nombre" name="nombre" placeholder="Ej: Zorro" title="Ingrese el nombre" value="<?=$data[2]?>">
                     </td>
                     <td>
-                        <input class="ojos" type="number" id="ojos" name="ojos" placeholder="Ej: 2" title="Ingrese la cantidad de ojos" value="<?=$data[3]?>">
+                        <input class="ojos" type="number" id="cant_ojos" name="cant_ojos" placeholder="Ej: 2" title="Ingrese la cantidad de ojos" value="<?=$data[3]?>">
                     </td>
                     <td>
-                        <input class="patas" type="number" id="patas" name="patas" placeholder="Ej: 4" title="Ingrese la cantidad de patas" value="<?=$data[4]?>">
+                        <input class="patas" type="number" id="cant_patas" name="cant_patas" placeholder="Ej: 4" title="Ingrese la cantidad de patas" value="<?=$data[4]?>">
                     </td>
 	 		
 	 			<input type="hidden" name="id_animal" value="<?=$data[0]?>">

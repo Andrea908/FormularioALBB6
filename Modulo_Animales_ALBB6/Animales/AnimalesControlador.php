@@ -8,7 +8,7 @@ class AnimalesControlador
 		$db=new clasedb();
 		$conex=$db->conectar();
 
-		$sql="SELECT * FROM registro_de_animales";
+		$sql="SELECT * FROM Animales";
 
 		$res=mysqli_query($conex,$sql);
 		$campos=mysqli_num_fields($res);
@@ -30,7 +30,7 @@ class AnimalesControlador
 	    $db=new clasedb();
 	    $conex=$db->conectar();
 
-	    $sql="SELECT * FROM registro_de_animales WHERE id=".$id_animal."";
+	    $sql="SELECT * FROM Animales WHERE id=".$id_animal."";
 	    $res=mysqli_query($conex,$sql);
 	    $data=mysqli_fetch_array($res);
 
@@ -42,7 +42,7 @@ class AnimalesControlador
 	    $db=new clasedb();
 	    $conex=$db->conectar();
 
-        $sql="UPDATE registro_de_animales SET especie='".$especie."',nombre='".$nombre."',cant_ojos='".$cant_ojos."',cant_patas='".$cant_patas."' WHERE id=".$id_animal;
+        $sql="UPDATE Animales SET especie='".$especie."',nombre='".$nombre."',cant_ojos='".$cant_ojos."',cant_patas='".$cant_patas."' WHERE id=".$id_animal;
 		$res=mysqli_query($conex,$sql);
 		    if ($res) {
                 ?>
@@ -67,7 +67,7 @@ class AnimalesControlador
 	$db=new clasedb();
 	$conex=$db->conectar();
 
-	$sql="DELETE FROM registro_de_animales WHERE id=".$id_animal;
+	$sql="DELETE FROM Animales WHERE id=".$id_animal;
 
 	$res=mysqli_query($conex,$sql);
 		    if ($res) {
@@ -114,7 +114,7 @@ class AnimalesControlador
 			?>
 			<!--script type="text/javascript">
 				alert("No existe la ruta");
-				window.location="AnimalesControlador.php?operacion=index_2";
+				window.location="AnimalesControlador.php?operacion=index";
 			</script-->
 			<?php
 		    break;
