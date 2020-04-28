@@ -1,16 +1,17 @@
 #Main-container {
 	margin: 100px auto;
-	width: 700px;
+	width: 750px;
 }
 table {
 	background-color: ghostwhite;
 	text-align: center;
+	font-size: 17px;
 	border-collapse: collapse;
-	width: 100%;
-	position: relative; left: 3.3cm;
+	width: 90%;
+	position: relative; left: 1.8cm; bottom: 1cm;
 }
 th, td {
-	padding: 5px;
+	padding: 6px;
 }
 thead {
 	background-color: orange;
@@ -22,7 +23,7 @@ tr:nth-child(even) {
 input.mod {
 	width: 100px; height: 30px; 
 	font-size: 20px; 
-	position: relative; left: 550px; top: 120px;
+	position: relative; right: 350px; top: 70px;
 	background: #921AFF;
 	color: white;
 	border-radius: 6px;
@@ -32,29 +33,23 @@ input.mod {
 }
 input.mod:hover {
 	background: #B15BFF;
-	transition-duration: 0.3s;
+	transition-duration: 0.5s;
 }
 /*campos y boton*/
-input.especie {
-	width: 160px; height: 30px; 
+input.nombres {
+	width: 190px; height: 30px; 
 	font-size: 17px; 
 	border: none;
 	border-bottom: solid 3px blue;
 }
-input.nombre {
-	width: 160px; height: 30px; 
+input.apellidos {
+	width: 190px; height: 30px; 
 	font-size: 17px; 
 	border: none;
 	border-bottom: solid 3px blue;
 }
-input.ojos {
-	width: 160px; height: 30px; 
-	font-size: 17px; 
-	border: none;
-	border-bottom: solid 3px blue;
-}
-input.patas {
-	width: 160px; height: 30px; 
+input.cedula {
+	width: 190px; height: 30px; 
 	font-size: 17px; 
 	border: none;
 	border-bottom: solid 3px blue;

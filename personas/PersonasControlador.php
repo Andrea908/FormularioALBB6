@@ -29,6 +29,7 @@ class PersonasControlador
 	    extract($_REQUEST);
 	    $db=new clasedb();
 	    $conex=$db->conectar();
+	    
 	    $sql="SELECT * FROM datos_personales WHERE id=".$id_persona."";
 	    $res=mysqli_query($conex,$sql);
 	    $data=mysqli_fetch_array($res);

@@ -1,13 +1,19 @@
+a.reg {
+	color: blue;
+	padding: 2px;
+	text-decoration: none;
+}
 #Main-container {
 	margin: 100px auto;
-	width: 700px;
+	width: 750px;
 }
 table {
 	background-color: ghostwhite;
 	text-align: center;
+	font-size: 17px;
 	border-collapse: collapse;
-	width: 100%;
-	position: relative; left: 3cm; bottom: 2.6cm;
+	width: 110%;
+	position: relative; bottom: 1cm;
 }
 th, td {
 	padding: 5px;

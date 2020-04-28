@@ -11,11 +11,11 @@ $data=unserialize($data);
 	<link rel="stylesheet" type="text/css" href="editar.css">
 </head>
 <body>
-	<header><h1>Animales</h1></header>
+	<header><h1>Editando Animales</h1></header>
 	<ul>
 		<li><a href="../index.php">Inicio</a></li>
-	    <li><a href="Formulario_Animales.html">Formulario</a></li>
-	    <li><a href="./Animales/AnimalesControlador.php?operacion=index">Animales</a></li>
+	    <li><a href="../Formulario_Animales.html">Formulario</a></li>
+	    <li><a href="./AnimalesControlador.php?operacion=index">Animales</a></li>
     </ul>
 
 	<form action="AnimalesControlador.php" method="post" name="formulario">

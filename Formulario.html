@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="Formulario.css">
+</head>
+<body>
+	<header><h1>Formulario</h1></header>
+	
+	<ul>
+		<li><a href="./index.php">Inicio</a></li>
+	    <li><a href="./personas/PersonasControlador.php?operacion=index">Personas</a></li>
+    </ul>
+
+	<form action="recibir_formulario.php" method="post" name="formulario">
+
+	 	<table id="Main-container" align="center">
+
+            <thead>
+                <tr>
+                    <th>Nombres</th><th>Apellidos</th><th>Cédula</th>
+                </tr></thead>
+
+                <td><input class="nombres" type="text" id="nombres" name="nombres" placeholder="Ej: Martin José" title="Ingrese sus nombres"></td>
+         
+                <td><input class="apellidos" type="text" id="apellidos" name="apellidos" placeholder="Ej: Perez Salcedo" title="Ingrese sus apellidos"></td>
+	 		
+	 		 	<td><input class="cedula" type="number" id="cedula" name="cedula" placeholder="Ej: 12345678" title="Ingrese su cédula"></td>
+	
+	 			<td><input class="enviar" type="submit" name="enviar" value="Enviar"></td>
+	 	</table>
+	 </form>
+</body>
+</html>

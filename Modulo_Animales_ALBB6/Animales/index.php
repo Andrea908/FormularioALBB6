@@ -18,12 +18,12 @@ $data=unserialize($data);
 	</script>
 </head>
 <body>
-	<header><h1>Animales</h1></header>
+	<header><h1>Lista de Animales</h1></header>
 
 	<ul>
 		<li><a href="../index.php">Inicio</a></li>
 	    <li><a href="../Formulario_Animales.html">Formulario</a></li>
-	    <li><a href="./Animales/AnimalesControlador.php?operacion=index">Animales</a></li>
+	    <li><a href="./AnimalesControlador.php?operacion=index">Animales</a></li>
     </ul>
 
 <table id="Main-container">
