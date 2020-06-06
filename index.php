@@ -11,6 +11,7 @@
 	    <li><a href="Formulario.html">Formulario</a></li>
 	    <li><a href="./personas/PersonasControlador.php?operacion=index">Personas</a></li>
 	    <li><a href="./Modulo_Animales_ALBB6/index.php">Animales</a></li>
+	    <li><a href="./personas/mostrar.php">Herencia</a></li>
     </ul>
 </body>
 </html>
