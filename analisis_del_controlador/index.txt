@@ -1,0 +1,29 @@
+Línea 8: esta es la función para el index, o para el archivo contenedor del formulario. El código que contendrá esta función es para obtener los datos ingresados en el index, como principal procedimiento.
+
+Línea 9: instancia la clase que contiene la conexión con la base de datos
+
+Línea 10: trae los valores de la clase que permite la conexión con la BD que se está utilizando
+
+Línea 12: aquí se realiza una consulta de la tabla a usarse, y selecciona u obtiene los valores de esa tabla de la base de datos, ej: nombres, apellidos, cédula...
+
+Línea 14: es el resultado que debe lanzar de la conexión y de la consulta a la BD. Puede, o arrojar error, o continuar con el flujo del código
+
+Línea 15: cuenta o trae el número de campos de la tabla de la base de datos que se está usando, consultando cuantas tiene
+
+Línea 16: el mismo procedimieto de campos, solo que aquí se usa para contar las filas de dicha tabla
+
+Línea 17:  itera este procedimiento
+
+Línea 18: con el array se traen los datos del formulario para luego procesarlos, y así lanzar una respuesta
+
+Línea 20: el ciclo while trae los datos de la BD, mediante el llamado de la consulta "$sql" y la conexión "$conex" con la misma definida en la variable "$res"
+
+Línea 21: aquí se indica que se debe repetir el llenado de campos, cuantas veces sea necesario, además, su valor principal es de cero, indicando que siempre será llenado
+
+Línea 22: son los datos ingresados en los campos y los que se mostraran impreso en filas
+
+Línea 24: repite el ciclo las veces que sea necesario
+
+Línea 26: cierra la conexión con la base de datos temporalmente, llamando a la variable "$conex" ya que es la que establece la conexión
+
+Línea 28: codifica los datos ingresados en los campos y filas del archivo contenedor del formulario, localizándose en el archivo index con un header

@@ -2,8 +2,7 @@
 include("../clasedb.php");
 extract($_REQUEST);
 
-class PersonasControlador
-{
+class PersonasControlador {
 	public function index() {
 		$db=new clasedb();
 		$conex=$db->conectar();
@@ -86,9 +85,7 @@ class PersonasControlador
 		    <?php
 	    }
     }//fin fucnion eliminar
-
-
-
+    
     static function controlador($operacion) {
 		$persona=new PersonasControlador();
 	switch ($operacion) {
