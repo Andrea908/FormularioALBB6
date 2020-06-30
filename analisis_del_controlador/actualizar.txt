@@ -1,0 +1,43 @@
+Línea 93: se crea la función para actualizar los datos que han sido registrados por medio del formulario
+
+Línea 95: extrae los datos de la consulta a la bd por medio del método $_POST
+
+Línea 96: instancia la clase que conecta a la base de datos, por medio de una variable objeto, la cual llamamos $db
+
+Línea 97: permite la conexion que se estableció en la clasedb, mediante la funcion que esta contiene, y la instacia con una variable $conex
+
+Línea 99: mediante la consulta a la base de datos, selecciona la tabla a usarse, donde verifica la cedula y el id de la persona registrada
+
+Línea 101: arroja el resultado de la conexión y la consulta de la base de datos, de la tabla en especifico 
+
+Línea 102: cuenta la cantidad de filas que posee la tabla, y así arrojar el resultado de esa cuenta
+
+Línea 103: el condicional "if" comprobará si el número de filas es mayor a cero. Es decir, comprobará si hay más de una fila llenada en la tabla
+
+Línea 104: se cierra el tag de php para abrir el siguiente de javaScript
+
+Línea 105: se abre los tags de <script>
+
+Línea 106: y se crea un alerta que imprima en pantalla que la Cédula ya ha sido registrada. Todo el proceso hecho anteriormente es una prueba 
+para comprobar si la cedula ya se había registrado y así no volver a ingresar el mismo dato, evitando la redundancia de datos
+
+Línea 107: y redirigiendo la url personasControlador, se mostrará la ventana de dicha alerta en el index, el archivo contenedor del formulario
+
+Línea 109: abre de nuevo el tag de php para realizar la siguiente condicional opuesta, que es ELSE
+
+Línea 111: si es el caso opuesto, se le pide a la base de datos que actualice en la tabla datos_personales, obteniendo los campos de la misma:
+nombres, apellidos, cédula, a partir del id de la persona registrada
+
+Linea 113: el resultado arrojado de la conexión y la base de datos consultada por medio de un query
+
+Línea 114: es otra condicional if que almacena el resultado de la consulta y la conexion, donde se verifica si está correcto
+
+Línea 117: se crea un alerta para notificar que el Registro ha sido modificado con exito
+
+Línea 118: redirige la ruta de personasControlador al index para hacer llegar este alerta 
+
+Línea 121: una vez más se apertura un tag php para dar apertura al ELSE final
+
+Línea 124: imprime en una alerta que el registro no pudo ser modificado debido a que hubo un error en la conexion o en la consulta
+
+Línea 125: y redirige la localización de la ruta de personasControlador para hacer llegar el mensaje al archivo del formulario index

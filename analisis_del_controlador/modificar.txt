@@ -1,0 +1,18 @@
+Línea 82: es la función para modificar los datos que han sido registrados por medio del formulario localizado en el index
+
+Línea 83: permite usar las varibles a modo de $_nombre; sin necesidad de agregarle $_POST a esa variable
+
+Línea 84: instancia la clase de la conexión a la base de datos que contiene la función para realizar dicho proceso de conexión, por medio de una 
+variable objeto, la cual llamamos $db
+
+Línea 85: se realiza el proceso de la conexion que se estableció en la clasedb, usando una variable $conex que llama a dicha funcion por medio de 
+la instancia del $db
+
+Línea 87: mediante la consulta a la base de datos, selecciona la tabla a usarse, donde verifica a partir del id la persona registrada
+
+Línea 88: arroja el resultado de la conexión y la consulta a la base de datos, de la tabla en específico
+
+Línea 89: trae los datos de la tabla por medio de un array, guardando la varible que contiene el resultado de la consulta antes hecha
+
+Línea 91: redirige la ruta al archivo receptor de dicha función, el cual es editar.php, codificando, o serializando los datos que dio como resultado
+el array 
