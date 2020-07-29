@@ -27,39 +27,18 @@ $result = mysqli_query($conex,$sql);
 		echo "No se pudo lograr asignar el atributo único a 'idem' <br>";
 	}
 */
-$generar = 0;
-
-for ($i=0; $i < 20; $i++) { 
-	$idm = rand(10, 2000);
-    $cod = rand(1000, 5000);
-
-    $sql = "INSERT INTO inmuebles (id, idem, estacionamiento, status, tipo, cod_postal) VALUES (NULL,'$idm','No','Ocupado','Casa','$cod')";
-
-    $result = mysqli_query($conex,$sql);
-
-    if ($result) {
-    	$generar++;
-    }
-}//final del bucle
-
-    if ($generar==20) {
-    	echo "¡REGISTRO EXITOSO!";
-    } else {
-    	echo "REGISTRO NO EXITOSO";
-    }
-
-$sql = mysqli_query($conex, "SELECT * FROM inmuebles");  //CONSULTA
-while($fila = mysqli_fetch_array($sql)){ //EXTRACCIÓN 
-    //MATRIZ
-    echo "<br>";
-    echo "id: ".$fila['id']."<br>";  //MOSTRAR DATOS
-	echo "idem: ".$fila['idem']."<br>";
-	echo "Estacionamiento: ".$fila['estacionamiento']."<br>";
-	echo "Estado: ".$fila['status']."<br>";
-	echo "Tipo: ".$fila['tipo']."<br>";
-	echo "Código postal: ".$fila['cod_postal']."<br>";
-	echo "<br>";
-}
-mysqli_free_result($sql);
-mysqli_close($conex);
-?>
+?> 
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+	<header><h1>BDD</h1></header>
+	<ul>
+		<li><a href="registrar.php">Ingresar 20 registros</a></li>
+		<li><a href="consultar.php">Realizar consulta</a></li>
+	</ul>
+</body>
+</html>
